@@ -11,3 +11,9 @@
 ### 2. 2_CoffeeShop:
 - HTML, CSS
 - Link to others html page
+
+### 3. 3_Movie:
+- Js: translate headerfixed by window.onscroll
+- Lib: 
++ Animate.css to handle animation
++ venobox to show video box
