@@ -3,4 +3,4 @@
 ### 0. 0_Housing:
 - HTML, CSS, JS
 + JS: Handle changing tab active for header
-- Lib: Lightbox to show modal, jquery.counterup.js
+- Lib: Lightbox to show modal, jquery.counterup.js, owl-carousel
