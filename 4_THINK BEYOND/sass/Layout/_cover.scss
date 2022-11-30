@@ -1,0 +1,38 @@
+.cover{
+  background-image: url("../img/index-banner-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 762px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .cover__content{
+    text-align: center;
+    h2{
+      @include textStyle(60px, $color-2, 300);
+      letter-spacing: 5px;
+      margin: 0;
+    }
+    p{
+      @include textStyle(20px, $color-2, 500);
+      letter-spacing: 6px;
+      line-height: 31px;
+      margin: 0;
+    }
+  }
+
+  /* Responsive */
+  @include responsive("screen-768"){
+    .cover__content{
+      h2{
+        font-size: 30px;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+
+  }
+}

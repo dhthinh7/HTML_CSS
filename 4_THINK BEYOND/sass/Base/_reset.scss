@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: $fs-0;
+  font-weight: $fw-0;
+  color: $color-0;
+  letter-spacing: 1.5px;
+  font-weight: $fw-0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: inherit;
+}

@@ -1,0 +1,107 @@
+.blog{
+  .blog__content{
+    margin-top: 50px;
+    .row{
+      align-items: center;
+      .blog__left{
+        margin: 0 30px;
+        text-align: center;
+        position: relative;
+        img{
+          width: 100%;
+          height: auto;
+        }
+        p{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: $color-2;
+          background-color: $color-overlay;
+          padding: 10px;
+          margin: 0;
+          width: 100%;
+          text-align: left;
+        }
+      }
+      .blog__right{
+        margin: 0 30px;
+        .blog__cat{
+          margin-bottom: 10px;
+          a{
+            @include textStyle(12px, $color-13, normal);
+            text-decoration: none;
+            letter-spacing: 1.5px;
+            margin-right: 5px;
+            transition: all .5s;
+            &:hover{
+              color: $color-1;
+            }
+          }
+        }
+        h4{
+          margin-bottom: 10px;
+          a{
+            text-decoration: none;
+            color: $color-6;
+            letter-spacing: 1px;
+            transition: all .5s;
+            &:hover{
+              color: $color-1;
+            }
+          }
+        }
+        .blog__date{
+          a{
+            letter-spacing: 2px;
+          }
+          span{
+            @include textStyle(12px, $color-13, normal);
+            text-decoration: none;
+            letter-spacing: 2px;
+            &::before{
+              content: "";
+              border-left: 1px solid $color-13;
+              margin-right: 8px;
+            }
+          }
+        }
+        p{
+          color: $color-4;
+          line-height: 30px;
+          letter-spacing: 0;
+          margin: 30px 0;
+        }
+        .blog__readMore{
+          text-decoration: none;
+          color: $color-4;
+          transition: all .3s;
+          span{
+            margin-left: 5px;
+            color: $color-3;
+          }
+          &:hover{
+            color: black;
+            span{
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive("screen-768"){
+    .blog__head{
+      h3{
+        font-size: 18px;
+      }
+      .jobs_text{
+        width: 80%;
+      }
+    }
+    .row{
+      .blog__right{
+        padding-top: 30px;
+      }
+    }
+  }
+}

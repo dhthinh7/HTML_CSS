@@ -1,0 +1,28 @@
+.number{
+  background-color: $color-16;
+  .number__content{
+    .number__item{
+      padding: 0 30px;
+      color: $color-2;
+      .number__icon{
+        margin-bottom: 10px;
+        i{
+          font-size: 36px;
+          margin-right: 10px;
+        }
+        span{
+          font-size: 36px;
+          line-height: 24px;
+        }
+      }
+      p{
+        line-height: 24px;
+      }
+    }
+  }
+  @include responsive("screen-768"){
+    .number__content{
+      text-align: center;
+    }
+  }
+}

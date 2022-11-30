@@ -1,0 +1,41 @@
+.awesome{
+  background-image: url("../img/8.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 150px 0;
+  .awesome__content{
+    text-align: center;
+    .awesome__text{
+      h5{
+        @include textStyle(16px, $color-1, null);
+        letter-spacing: 3px;
+      }
+      h2{
+        @include textStyle(36px, $color-2, normal);
+        letter-spacing: 3px;
+
+      }
+    }
+    .button{
+      margin-top: 50px;
+      .button--name{
+        background-color: $color-1;
+        color: $color-2;
+        &:hover{
+          background-color: $color-2;
+          color: $color-6;
+        }
+      }
+    }
+  }
+  @include responsive("screen-768"){
+    .awesome__content{
+      .awesome__text{
+        h2{
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}

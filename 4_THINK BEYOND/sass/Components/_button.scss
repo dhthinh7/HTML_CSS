@@ -1,0 +1,15 @@
+.button{
+  line-height: 48px;
+  .button--name{
+    @include textStyle(14px, $color-5, normal);
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: $color-6;
+    transition: all .5s;
+  }
+  &:hover{
+    .button--name{
+      background-color: $color-1;
+    }
+  }
+}

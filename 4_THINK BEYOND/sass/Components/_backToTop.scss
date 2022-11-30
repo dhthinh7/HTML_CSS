@@ -1,0 +1,36 @@
+/* back to top */
+.backToTop{
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .2s;
+}
+
+.cd-top--is-visible {
+  // visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.backToTop i{
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, .6);
+  transition: all .2s;
+  &:hover{
+    color: #323232;
+    background-color: $color-1;
+  }
+}
+
+@include responsive("screen-768"){
+  .cd-top--is-visible{
+    display: none;
+  }
+}

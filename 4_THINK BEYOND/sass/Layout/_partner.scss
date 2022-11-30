@@ -1,0 +1,67 @@
+.partner{
+  .partner__top{
+    width: 55%;
+    margin: 0 auto;
+    .partner__carousel{
+      text-align: center;
+      .partner__itemTop{
+        margin: 20px;
+        i{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          font-size: 60px;
+          line-height: 91px;
+          text-align: center;
+          background-color: #e5e5e5;;
+          color: $color-2;
+          margin-bottom: 20px;
+        }
+        .partner__infor{
+          @include textStyle(16px, $color-4, null);
+          line-height: 30px;
+          letter-spacing: 0;
+          font-style: italic;
+          margin-bottom: 30px;
+        }
+        .partner__detail{
+          margin-top: 10px;
+          .partner__name{
+            @include textStyle(14px, $color-6, null);
+            letter-spacing: 2;
+            margin: 0;
+          }
+          .partner__subName{
+            @include textStyle(12px, $color-17, null);
+            margin: 0;
+          }
+        }
+      }
+      .owl-theme{
+        .owl-dots{
+          .owl-dot{
+            width: 20px;
+            margin: 0 3px;
+            span{
+              color: $color-17;
+              width: 12px;
+              height: 12px;
+            }
+            &.active{
+              span{
+                color: #869791;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive("screen-768"){
+    .partner__top{
+      width: 80%;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+/* Format for text */
+@mixin textStyle ($fs, $color, $fw){
+  font-size: $fs;
+  color: $color;
+  font-weight: $fw;
+}
+
+/* Format for progress bar */
+@mixin progressBarStyle($ariaWidth){
+  max-width: $ariaWidth;
+  animation: progress 1s 1;
+  position: relative;
+  .skill__text{
+    &::before{
+      content: "#{$ariaWidth}";
+      height: 20px;
+      @include textStyle(10px, $color-6, normal);
+      background-color: $color-8;
+      position: absolute;
+      top: -30px;
+      right: -5px;
+      text-align: center;
+      line-height: 20px;
+      padding: 0 8px;
+      border-radius: 10px;
+      letter-spacing: 0;
+    }
+  }
+  .skill__arrow{
+    &::before{
+      content: "";
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid $color-8;
+      position: absolute;
+      top: -11px;
+      right: 7px;
+    }
+  }
+
+  @keyframes progress {
+    0%{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+}
+
+/* Responsive */
+@mixin responsive ($screen) {
+  /* Check screen whether is exist or not */
+  @if map-has-key($map: $breakpoint, $key: $screen){
+    $value: map-get($map: $breakpoint, $key: $screen);
+    @media screen and (max-width:$value) {
+      @content;
+    }
+  }
+  @else{
+    @warn "`{screen}` is invalid";
+  }
+}

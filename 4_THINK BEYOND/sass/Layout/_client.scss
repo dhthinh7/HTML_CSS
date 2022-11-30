@@ -1,0 +1,24 @@
+.clients{
+  .clients__content{
+    .clients__myCarousel{
+      display: none;
+    }
+    .clients__full{
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  @include responsive("screen-768"){
+    .clients__content{
+      .clients__myCarousel{
+        display: block;
+        width: 70%;
+        margin: auto;
+      }
+      .clients__full{
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import './Helpers/variable';
+@import './Helpers/mixin';
+
+@import './Base/reset';
+
+@import './Layout/header';
+@import './Layout/cover';
+@import './Layout/jobs';
+@import './Layout/skill';
+@import './Layout/showCase';
+@import './Layout/team';
+@import './Layout/awesome';
+@import './Layout/blog';
+@import './Layout/category';
+@import './Layout/number';
+@import './Layout/partner';
+@import './Layout/footer';
+@import './Layout/client';
+
+@import './Components/sectionCommon';
+@import './Components/button';
+@import './Components/backToTop';
+

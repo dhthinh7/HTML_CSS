@@ -1,0 +1,118 @@
+.category{
+  background-image: url("../img/pattern-2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  .category__content{
+    padding: 0 30px;
+    #myTab{
+      justify-content: left;
+      padding: 0;
+      .nav-item{
+        position: relative;
+        .nav-link{
+          margin: 10px;
+          padding: 0;
+          background-color: $color-15;
+          border: 1px solid transparent;
+          transition: all .3s;
+          &.active{
+            background-color: $color-2;
+            i{
+              &::after{
+                opacity: 1;
+              }
+            }
+          }
+          i{
+            @include textStyle(36px, $color-14, null);
+            padding: 35px 70px;
+            &::after{
+              content: "";
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-top: 10px solid $color-2;
+              position: absolute;
+              bottom: 0;
+              left: 83px;
+              opacity: 0;
+            }
+          }
+          &:hover{
+            background-color: $color-2;
+            i{
+              &::after{
+                opacity: 1;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .tab-content{
+      padding: 30px 0;
+      .category__title{
+        margin-bottom: 50px;
+        h5{
+          @include textStyle(14px, $color-4, normal);
+          letter-spacing: 2px;
+          line-height: 30px;
+        }
+        h2{
+          color: $color-3;
+          letter-spacing: 2px;
+          line-height: 45px;
+        }
+      }
+      p{
+        letter-spacing: 0;
+        line-height: 30px;
+      }
+    }
+  }
+
+  @include responsive("screen-768"){
+    .category__content{
+      #myTab{
+        .nav-item{
+          &.category_indent{
+            margin-left: 10px;
+          }
+          .nav-link{
+            margin-top: 0;
+            margin-bottom: 0;
+            i{
+              &::after{
+                bottom: -10px;
+                color: $color-2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive("screen-414"){
+    .category__content{
+      #myTab{
+        .nav-item{
+          width: 100%;
+          &.category_indent{
+            margin-left: 0;
+          }
+          .nav-link{
+            width: 100%;
+            margin-bottom: 10px;
+            i{
+              &::after{
+                bottom: 0;
+                left: 165px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

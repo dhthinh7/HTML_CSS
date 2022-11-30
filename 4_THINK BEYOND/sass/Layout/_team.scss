@@ -1,0 +1,141 @@
+.team{
+  .team__infor{
+    .section__content{
+      padding:0 30px;
+      .section__item{
+        .team__name{
+          position: absolute;
+          bottom: 30px;
+          right: 0;
+          width: 70%;
+          padding: 10px 20px;
+          text-align: right;
+          background-color: $color-overlay;
+          h4{
+            @include textStyle(14px, $color-2, normal);
+            margin: 0;
+            line-height: 20px;
+          }
+          p{
+            @include textStyle(12px, $color-teamName, normal);
+            margin: 0;
+            line-height: 20px;
+          }
+        }
+        .section__overlay{
+          .section__text{
+            top: -20%;
+            opacity: 0;
+            transition-delay: .3s;
+            h4{
+              padding-bottom: 30px;
+              a{
+                color: $color-4;
+                &:hover{
+                  color: $color-4;
+                  cursor: unset;
+                }
+              }
+            }
+            p{
+              a{
+                font-size: 14px;
+                letter-spacing: 0px;
+                line-height: 30px;
+                &:hover{
+                  color: $color-10;
+                  cursor: unset;
+                }
+              }
+            }
+          }
+          .section__social{
+            position: absolute;
+            bottom: -10%;
+            left: 50;
+            width: 100%;
+            opacity: 0;
+            transition: all .5s;
+            transition-delay: .3s;
+            a{
+              @include textStyle(16px, $color-6, normal);
+              text-decoration: none;
+              margin: 0 10px;
+              transition: all .5s;
+              &:hover{
+                color: $color-1;
+              }
+            }
+          }
+        }
+        &:hover{
+          .section__text{
+            top:10%;
+            opacity: 0.9;
+            // bottom: unset;
+          }
+        }
+        &:hover{
+          .section__social{
+            opacity: 0.9;
+            bottom: 5%;
+          }
+        }
+      }
+    }
+  }
+  .team__bottom{
+    margin: 100px 30px 0;
+    padding: 40px;
+    background-color: $color-12;
+    .row{
+      align-items: center;
+      .team__bottomLeft{
+        h3{
+          @include textStyle(18px, $color-3, normal);
+          line-height: 30px;
+          span{
+            color: $color-1;
+          }
+        }
+        p{
+          @include textStyle(15px, $color-4, 400);
+          line-height: 20px;
+        }
+      }
+      .team__bottomRight{
+        margin-right: 40px;
+        text-align: right;
+      }
+    }
+  }
+  @include responsive("screen-768"){
+    .team__top{
+      margin-bottom: 20px;
+      .showcase__text{
+        h3{
+          font-size: 18px;
+        }
+        .jobs_text{
+          width: 80%;
+        }
+      }
+    }
+    .team__bottom{
+      .row{
+        .team__bottomLeft{
+          p{
+            letter-spacing: 0;
+          }
+        }
+        .col-12{
+          padding: 0;
+          .team__bottomRight{
+            margin: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

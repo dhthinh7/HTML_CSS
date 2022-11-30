@@ -1,0 +1,120 @@
+header{
+  // height: 100px;
+  .myNavbar{
+    position: fixed;
+    z-index: 100;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    padding: 0;
+    .paddingContainer{
+      .navbar-brand{
+        transition: all .5s;
+        height: 100px;
+        img{
+          height: 100%;
+        }
+      }
+      .navbar-toggler{
+        &:focus{
+          box-shadow: unset;
+        }
+      }
+      #myNavbar{
+        justify-content: right;
+        .navbar-nav{
+          .nav-item{
+            .nav-link{
+              color: $color-2;
+              font-size: 13px;
+              transition: all .3s;
+              padding: 0 12px;
+              &:hover{
+                color: $color-1;
+              }
+              i{
+                // font-size: 14px;
+                margin-right: 2px;
+              }
+            }
+            .active{
+              color: $color-1;
+            }
+          }
+        }
+      }
+    }
+    &.navbarWrapper{
+      position: fixed;
+      background-color: $color-11;
+      .paddingContainer{
+        .navbar-brand{
+          height: 60px;
+        }
+      }
+    }
+  }
+  @include responsive("screen-768"){
+    .myNavbar{
+      position:fixed;
+      max-width: 768px;
+      height: 50px;
+      flex-wrap: nowrap;
+      background-color: $color-11;
+      .paddingContainer{
+        .navbar-brand{
+          height: 60px;
+        }
+        .navbar-toggler{
+          display: block;
+          justify-content: flex-start;
+          .navbar-toggler-icon{
+            color: $color-2;
+          }
+        }
+        #myNavbar{
+          position: absolute;
+          top: 50px;
+          width: 91%;
+          background-color: white;
+          .navbar-nav{
+            .nav-item{
+              padding: 12px 20px;
+              line-height: 20px;
+              border-bottom: 1px solid #f0f0f0;
+              .nav-link{
+                color: #333;
+                position: relative;
+                .plus{
+                  position: absolute;
+                  right: 7px;
+                  top: -10px;
+                  font-weight: 500;
+                  font-size: 22px;
+                  border-left: 1px solid #f0f0f0;
+                  padding: 10px 0 10px 15px;
+                }
+                &.active{
+                  color: $color-1;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.navbar-expand-md{
+        #myNavbar{
+          .navbar-nav{
+            flex-direction: column;
+          }
+        }
+        .navbar-collapse{
+          display: block !important;
+          &.collapse:not(.show){
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}

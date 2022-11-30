@@ -17,3 +17,7 @@
 - Lib: 
 + Animate.css to handle animation
 + venobox to show video box
+
+### 4. 4_THINK BEYOND
+	Similar 3_Movie
+- Scss

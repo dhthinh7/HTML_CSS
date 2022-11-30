@@ -1,0 +1,130 @@
+footer{
+  .footer__top{
+    background-color: $color-6;
+    padding: 80px 0;
+    .footer__content{
+      width: 80%;
+      margin:auto;
+      .footer__item{
+        padding: 0 20px;
+        .footer__logo{
+          margin-bottom: 20px;
+          display: block;
+          img{
+            width: 100px;
+            height: auto;
+          }
+        }
+        .footer__text{
+          color: $color-4;
+          line-height: 30px;
+          letter-spacing: 0;
+        }
+        .footer__tittle{
+          color: $color-2;
+          font-size: 14px;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+        }
+        .footer__middle{
+          padding: 0;
+          list-style: none;
+          li{
+            display: block;
+            border-bottom: 1px solid #333;
+            a{
+              text-decoration: none;
+              color: $color-19;
+              line-height: 45px;
+              i{
+                padding-right: 5px;
+              }
+              transition: all .3s;
+              &:hover{
+                color: $color-1;
+              }
+            }
+          }
+        }
+        .footer__img{
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          .footer__imgGap{
+            padding: 0 10px 10px 0;
+            a{
+              width: 55px;
+              height: 55px;
+              display: block;
+              img{
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer__bottom{
+    padding: 25px 0;
+    border-top: 1px solid $color-20;
+    background-color: $color-16;
+    p{
+      margin: 10px 0 0;
+      color: #6f7273;
+      span{
+        a{
+          text-decoration: none;
+          color: $color-2;
+          transition: all .3s;
+          &:hover{
+            color: $color-1;
+          }
+        }
+      }
+    }
+    .footer__social{
+      display: flex;
+      justify-content: right;
+      a{
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 35px;
+        display: inline-block;
+        color: #6f7273;
+        border: 1px solid #5a5a5a;
+        margin-left: 15px;
+        transition: all .3s;
+        &:hover{
+          color: $color-2;
+          background-color: #5a5a5a;
+        }
+      }
+    }
+  }
+
+  @include responsive("screen-768"){
+    .footer__top{
+      .footer__content{
+        width: 100%;
+        .footer__item{
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .footer__bottom{
+      .footer__social{
+        justify-content: left;
+        margin-top: 20px;
+        a{
+          margin: 0 15px 0 0;
+        }
+      }
+    }
+  }
+}

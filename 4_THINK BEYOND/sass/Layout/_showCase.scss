@@ -1,0 +1,46 @@
+.showcase{
+  &.section--align{
+    padding-bottom: 0;
+  }
+  .showcase__bot{
+    #myTab{
+      justify-content: center;
+      border: 1px solid transparent;
+      margin-bottom: 50px;
+      .nav-item{
+        line-height: 23px;
+        .nav-link{
+          @include textStyle(14px, $color-9, normal);
+          letter-spacing: 3px;
+          &.active{
+            border: 1px solid transparent;
+            color: $color-3;
+          }
+          &:hover{
+            border: 1px solid transparent;
+            color: $color-6;
+          }
+        }
+      }
+    }
+    #myTabContent{
+      .row{
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  @include responsive("screen-768"){
+    .showcase__top{
+      .showcase__text{
+        h3{
+          font-size: 18px;
+        }
+        .jobs_text{
+          width: 80%;
+        }
+      }
+    }
+  }
+}
