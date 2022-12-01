@@ -1,0 +1,44 @@
+@mixin button($border, $bg, $color, $padding, $bg-hover, $color-hover) {
+  border: 2px solid $border;
+  border-radius: 40px;
+  background-color: $bg;
+  color: $color;
+  font-weight: $font-weight-bold;
+  padding: $padding;
+  font-size: $font-size-1;
+  &:hover{
+    background-color: $bg-hover;
+    color: $color-hover;
+  }
+}
+
+@mixin arrow($left, $right){
+  position: absolute;
+  left: $left;
+  right: $right;
+  content: '';
+  border-bottom: 15px solid white;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: -15px;
+}
+
+@mixin arrow-down(){
+  position: absolute;
+  content: '';
+  border-top: 15px solid white;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  bottom: $pd-2*(-1) - $mg-1;
+}
+
+@mixin responsive($screen){
+  @if(map-has-key($map: $breakpoints, $key: $screen)){
+    $value: map-get($map: $breakpoints, $key: $screen);
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Screen `{screen}` is invalid";
+  }
+}

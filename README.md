@@ -21,3 +21,14 @@
 ### 4. 4_THINK BEYOND
 	Similar 3_Movie
 - Scss
+
+### 5. 5_ToDoList_OOP
+- Call API backend
+- Todo List is wrapped into class
+- How to add global function
+
+### 6. 6_QuanLySinhVien
+- Similar 5
+
+### 7. 7_LandingPageHoneda
+- Jquery

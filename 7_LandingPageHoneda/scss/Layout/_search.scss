@@ -1,0 +1,35 @@
+#search-area{
+  background-color: $color-grey;
+  padding: $pd-1 $pd-6;
+  position: relative;
+  div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    i{
+      color: $color-blue-200;
+      font-size: $font-size-2;
+      padding-right: $pd-2;
+    }
+    input{
+      width: 85%;
+      height: 4.5rem;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      &::placeholder{
+        font-size: $font-size-3;
+        color: $color-blue-200;
+      }
+      font-weight: $font-weight-300;
+      font-size: $font-size-3;
+      color: $color-blue-200;
+    }
+    &::before{
+      @include arrow(unset, 1%);
+      border-bottom-color: $color-grey;
+    }
+
+  }
+}

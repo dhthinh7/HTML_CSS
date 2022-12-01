@@ -1,0 +1,152 @@
+#our-vehicles{
+  background-color: $color-grey;
+  border: 1px solid transparent;
+  .carousel{
+    height: 600px;
+    .carousel-inner{
+      height: 100%;
+      .carousel-item{
+        height: 95%;
+        .carousel-caption-config{
+          width: 30%;
+          position: absolute;
+          top: 5%;
+          left: 6%;
+          color: white;
+          font-size: $font-size-1;
+          > p{
+            font-weight: $font-weight-bold;
+            span{
+              font-weight: normal;
+            }
+          }
+          img{
+            width: 60%;
+            transform: translateX($pd-2*(-1));
+          }
+          p:nth-child(3){
+            font-weight: $font-weight-300;
+          }
+          .carousel-caption-detail{
+            margin-bottom: 30px;
+            .carousel-detail-content{
+              h2{
+                font-weight: $font-weight-300;
+                font-size: $font-size-5;
+              }
+            }
+          }
+        }
+        .carousel-caption-footer{
+          width: 50%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border-top: .15rem solid red;
+          a{
+            font-weight: $font-weight-bold;
+            color: white;
+            font-size: $font-size-1;
+          }
+        }
+      }
+    }
+  }
+  h1{
+    color: $color-dark-blue-200;
+    font-size: $font-size-4;
+    margin: $mg-3 0 $mg-5 0;
+  }
+  .carousel-control-prev, .carousel-control-next{
+    width: 5%;
+    i{
+      font-size: $font-size-5;
+      color: red;
+      padding: $pd-5 $pd-3;
+      background-color: $color-dark-white;
+    }
+  }
+  .carousel-control-prev{
+    left: -0.7rem;
+    i{
+      border-bottom-right-radius: 10%;
+      border-top-right-radius: 10%;
+    }
+  }
+  .carousel-control-next{
+    right: -0.7rem;
+    i{
+      border-top-left-radius: 10%;
+      border-bottom-left-radius: 10%;
+    }
+  }
+  .carousel-indicators-config{
+    width: 50%;
+    margin: 0 auto $mg-1 auto;
+    li{
+      color: $color-dark-blue-200;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-1;
+      padding: $pd-1 $pd-2;
+      border-radius: 4rem;
+      cursor: pointer;
+      &.active{
+        color: white;
+        background-color: $color-blue-200;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        &::before{
+          @include arrow-down();
+          z-index: 90;
+        }
+      }
+    }
+  }
+  .carousel-indicators-xs{
+    width: 60%;
+    margin: auto;
+    background-color: $color-white;
+    border: $border-1;
+    padding: 0 $pd-2;
+    .indicators-xs-header{
+      h1{
+        font-size: $font-size-1 - .2;
+        color: $color-blue-200;
+        font-weight: $font-weight-300;
+        padding: $pd-2;
+        margin: $mg-1;
+        margin-right: auto;
+        span{
+          font-weight: $font-weight-bold;
+          color: $color-dark-blue-200;
+        }
+      }
+      i{
+        font-size: $font-size-5;
+        color: $color-blue-100;
+        transition: all .5s;
+        cursor: pointer;
+      }
+
+    }
+    ol{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      border-top: $border-1;
+      li{
+        color: $color-blue-200;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-1;
+        padding: $pd-2 $pd-1;
+        cursor: pointer;
+      }
+    }
+  }
+  
+}
+
+.transform-rotate{
+  transform: rotate(-180deg);
+}

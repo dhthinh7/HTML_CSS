@@ -1,0 +1,18 @@
+@media screen and (max-width:992px){
+  #header{
+    #navbar{
+      a{
+        padding: $pd-1 $pd-2;
+      }
+      .nav-item .nav-link{
+        padding: $pd-1 $pd-2;
+      }
+      &>a:first-child{
+        padding: $pd-1 $pd-2;
+      }
+    }
+  }
+  #search-area{
+    display: none;
+  }
+}
