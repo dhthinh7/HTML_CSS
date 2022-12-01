@@ -6,7 +6,7 @@
 - Lib: Lightbox to show modal, jquery.counterup.js, owl-carousel
 
 ### 1. 1_BakeShop:
-	Similar 0_Housing
+Similar 0_Housing
 
 ### 2. 2_CoffeeShop:
 - HTML, CSS
@@ -19,7 +19,7 @@
 + venobox to show video box
 
 ### 4. 4_THINK BEYOND
-	Similar 3_Movie
+Similar 3_Movie
 - Scss
 
 ### 5. 5_ToDoList_OOP
@@ -30,5 +30,5 @@
 ### 6. 6_QuanLySinhVien
 - Similar 5
 
-### 7. 7_LandingPageHoneda
-- Jquery
+### 8. 8_Tab_tabpane
+- Create Tabs by JS
