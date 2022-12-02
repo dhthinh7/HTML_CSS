@@ -11,8 +11,6 @@ const getMultiClass = (className) => {
 const tabItems = getMultiClass('.tab-item')
 const tabPane = getMultiClass('.tab-pane')
 const line = getClass('.line')
-line.style.left = tabItems[0].offsetLeft + 'px'
-line.style.width = tabItems[0].offsetWidth + 'px'
 
 tabItems.forEach((item, index) => {
   item.onclick = function() {

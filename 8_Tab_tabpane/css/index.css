@@ -9,6 +9,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, pink, transparent);
+  height: 100vh;
 }
 
 .section_08 {
@@ -43,7 +45,7 @@ body {
 .line {
   position: absolute;
   height: .3rem;
-  width: 2rem;
+  width: 0;
   top: 2.8rem;
   left: 0;
   background-color: rgb(255, 0, 0);
@@ -56,10 +58,18 @@ body {
 }
 
 .tab-pane {
-  font-size: 1.5rem;
-  font-weight: 700;
   display: none;
   transition: all 1s;
+}
+
+.tab-pane h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+
+.tab-pane p {
+
 }
 
 .tab-pane.active {
