@@ -62,6 +62,13 @@
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./8_Tab_tabpane/index.html",
       "img": "./images/8_Tab_tabpane.png"
+    },
+    {
+      "day": "Day 9",
+      "tittle": "Back to top with progress",
+      "description": "Description: Et qui enim quis rem libero doloremque",
+      "link": "./9_BackToTop/index.html",
+      "img": "./images/9_BackToTop.png"
     }
   ]
 }
