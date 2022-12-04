@@ -1,0 +1,162 @@
+:root {
+  --toast-width: 400px;
+  --color-success: #C5F7DD;
+  --color-infor: #CCE3FF;
+  --color-error: #FFD0CB;
+  --color-warning: #FFE8C3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  border:none
+}
+
+.toast__items {
+  width: var(--toast-width);
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.item {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+  margin-top: 1rem;
+  box-shadow: 0 0 20px 0 lightgray;
+  transition: all .5s linear;
+  animation: moveLeftIn .5s ease, moveRightOut 1s 4s linear forwards;
+}
+
+@keyframes moveLeftIn {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(100% + 2rem));
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRightOut {
+  100% {
+    opacity: 0;
+    transform: translateX(calc(100% + 2rem));
+  }
+}
+
+.item.success {
+  background-color: var(--color-success);
+  border-left: 10px solid #3BC279;
+}
+
+.item.success .icon {
+  color: #3BC279;
+}
+
+.item.infor {
+  background-color: var(--color-infor);
+  border-left: 10px solid #3E85E4;
+}
+
+.item.infor .icon {
+  color: #3E85E4;
+}
+
+.item.error {
+  background-color: var(--color-error);
+  border-left: 10px solid #E9594E;
+}
+
+.item.error .icon {
+  color: #E9594E;
+}
+
+.item.warning {
+  background-color: var(--color-warning);
+  border-left: 10px solid #E89F2B;
+}
+
+.item.warning .icon {
+  color: #E89F2B;
+}
+
+.icon {
+  margin: 10px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.tittle {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+#toast__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+  transition: all .3s ease;
+  opacity: 0.5;
+}
+
+#toast__close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Simulate add toast notification */
+.simulate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  padding: .5rem 1rem;
+  transition: all .3s ease;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 lightgray;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn.success {
+  background-color: var(--color-success);
+}
+
+.btn.infor {
+  background-color: var(--color-infor);
+}
+
+.btn.error {
+  background-color: var(--color-error);
+}
+
+.btn.warning {
+  background-color: var(--color-warning);
+}

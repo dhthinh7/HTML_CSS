@@ -69,6 +69,13 @@
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./9_BackToTop/index.html",
       "img": "./images/9_BackToTop.png"
+    },
+    {
+      "day": "Day 10",
+      "tittle": "Toast notification",
+      "description": "Description: Et qui enim quis rem libero doloremque",
+      "link": "./10_ToasNotification/index.html",
+      "img": "./images/10_ToasNotification.png"
     }
   ]
 }
