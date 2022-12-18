@@ -5,77 +5,88 @@
       "tittle": "Housing",
       "description": "Description: Housing description",
       "link": "./0_Housing/index.html",
-      "img": "./images/0_housing.png"
+      "img": "./images/0_housing.png", 
+      "isShow": true
     },
     {
       "day": "Day 1",
       "tittle": "BakeShop",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./1_BakeShop/index.html",
-      "img": "./images/1_BakeShop.png"
+      "img": "./images/1_BakeShop.png",
+      "isShow": true
     },
     {
       "day": "Day 2",
       "tittle": "CoffeeShop",
       "description": "Description: CoffeeShop description",
       "link": "./2_CoffeeShop/index.html",
-      "img": "./images/2_CoffeeShop.png"
+      "img": "./images/2_CoffeeShop.png",
+      "isShow": false
     },
     {
       "day": "Day 3",
       "tittle": "Movie",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./3_Movie/index.html",
-      "img": "./images/3_Movie.png"
+      "img": "./images/3_Movie.png",
+      "isShow": true
     },
     {
       "day": "Day 4",
       "tittle": "Think Beyond",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./4_THINK_BEYOND/index.html",
-      "img": "./images/4_THINK_BEYOND.png"
+      "img": "./images/4_THINK_BEYOND.png",
+      "isShow": true
     },
     {
       "day": "Day 5",
       "tittle": "Todo List",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./5_ToDoList_OOP/index.html",
-      "img": "./images/5_ToDoList_OOP.png"
+      "img": "./images/5_ToDoList_OOP.png",
+      "isShow": true
     },
     {
       "day": "Day 6",
       "tittle": "Student Management",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./6_QuanLySinhVien/index.html",
-      "img": "./images/6_QuanLySinhVien.png"
+      "img": "./images/6_QuanLySinhVien.png",
+      "isShow": false
     },
     {
       "day": "Day 7",
       "tittle": "Landing Page",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./7_LandingPageHoneda/index.html",
-      "img": "./images/7_LandingPageHoneda.png"
+      "img": "./images/7_LandingPageHoneda.png",
+      "isShow": false
     },
     {
       "day": "Day 8",
       "tittle": "Tabs-Tabpane",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./8_Tab_tabpane/index.html",
-      "img": "./images/8_Tab_tabpane.png"
+      "img": "./images/8_Tab_tabpane.png",
+      "isShow": true
     },
     {
       "day": "Day 9",
       "tittle": "Back to top with progress",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./9_BackToTop/index.html",
-      "img": "./images/9_BackToTop.png"
+      "img": "./images/9_BackToTop.png",
+      "isShow": true
     },
     {
       "day": "Day 10",
       "tittle": "Toast notification",
       "description": "Description: Et qui enim quis rem libero doloremque",
       "link": "./10_ToasNotification/index.html",
-      "img": "./images/10_ToasNotification.png"
+      "img": "./images/10_ToasNotification.png",
+      "isShow": true
     }
   ]
 }
